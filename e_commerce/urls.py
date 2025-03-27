@@ -23,8 +23,8 @@ from products.views import list_products, retrieve_product, create_product
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("products/", list_products),
+    path ("products/create/", create_product),
     path ("products/<int:id>/", retrieve_product),
-    path ("products/create/", create_product)
 
 
 ]
